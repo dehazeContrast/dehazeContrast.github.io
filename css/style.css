@@ -2,10 +2,14 @@
     margin: 0;
     padding: 0;
 }
+html {
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'Roboto Flex', sans-serif;
     min-height: 100vh;
-    background-image: url(abstract-blue-light-gradient-blurred-colorful-gradient-background_558873-57843.avif)
+    background-image: url(abstract-blue-light-gradient-blurred-colorful-gradient-background_558873-57843.avif);
+    padding-bottom: 80px;
 }
 
 #rabbit-icon {
@@ -72,6 +76,10 @@ h1 {
     margin-top: 10px;
     margin-left: 175px;
     color:#2e2e2e
+}
+#about {
+    padding-top: 800px;
+    scroll-margin-bottom: 10px;
 }
 
 body, nav, nav a {
