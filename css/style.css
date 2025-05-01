@@ -19,7 +19,7 @@ body{
 #bottom-left {
     flex-direction: column;
     align-items: flex-start;
-    position: absolute;
+    position: fixed;
     bottom: 40px;
     left: 20px;
     padding: 5px 10px 10px;
@@ -104,7 +104,7 @@ h1 {
     transition: all 0.25s linear;
     position: fixed;
     top: 0;
-    right: 0;
+    left: 0;
     height: 50vh;
     width: 250px;
     z-index: 999;
