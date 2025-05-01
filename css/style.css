@@ -15,22 +15,29 @@ body{
     padding-bottom: 80px;
 }
 
-#name {
-        position: fixed;
-        bottom: 100px;
-        left: 20px;
-        padding: 5px 10px 10px;
-}
-#tag {
+#bottom-left {
+    flex-direction: column;
+    align-items: flex-start;
     position: fixed;
-    font-size: 40px;
     bottom: 40px;
     left: 20px;
     padding: 5px 10px 10px;
+}
+
+#name {
+    display: flex;
+    align-items: flex-end;
+}
+#tag {
+    font-size: 40px;
     color: #fff0f3;
 }
 #rabbit-icon {
     animation: bounce 0.4s ease-in-out;
+}
+
+#rabbit-icon:focus, #rabbit-icon:active {
+    outline: none;
 }
 
 @keyframes bounce {
@@ -69,6 +76,7 @@ nav li:first-child{
     margin-right: auto;
     text-decoration: none;
     display: flex;
+    justify-content: flex-start;
     align-items: center;
     color: black;
 }
@@ -111,23 +119,11 @@ h1 {
     scroll-margin-bottom: 10px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 body, nav, nav a {
     transition: background-color 0.25s linear, color 0.25s linear;
 }
+
+
 
 body.dark-mode {
     background-image: none;
@@ -140,7 +136,7 @@ body.dark-mode .description {
     color:#949494
 }
 body.dark-mode nav a:hover {
-    background-color: #2e2e2e;
+    /* background-color: #2e2e2e; */
     background-repeat: no-repeat;
     font-weight:700;
     transition: all 0.25s linear;
