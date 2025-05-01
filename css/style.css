@@ -11,7 +11,7 @@ html {
 body{
     font-family: 'Roboto Flex', sans-serif;
     min-height: 100vh;
-    background-color:pink;
+    background-color:#ff8da1;
     padding-bottom: 80px;
 }
 
@@ -45,7 +45,7 @@ body{
     50% { transform: translateY(-5px); }
   }
 nav{
-    background-color:pink;
+    background-color:#ff8da1;
 }
 nav ul{
     width: 100%;
@@ -53,13 +53,14 @@ nav ul{
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    padding: 50px 30px;
 }
 nav li{
     height: 80px;
 }
 nav a{
     height: 100%;
-    padding: 0 30px;
+    padding: 0px 10px;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -72,7 +73,7 @@ nav a:hover{
 }
 nav li:first-child{
     padding: 0;
-    margin-left: 40px;
+    margin-left: 0px;
     margin-right: auto;
     text-decoration: none;
     display: flex;
@@ -101,7 +102,7 @@ h1 {
     height: 100vh;
     width: 250px;
     z-index: 999;
-    background-color: pink;
+    background-color: #ff8da1;
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
     display: none;
     flex-direction: column;
