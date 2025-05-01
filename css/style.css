@@ -11,7 +11,7 @@ html {
 body{
     font-family: 'Roboto Flex', sans-serif;
     min-height: 100vh;
-    background-color:#ff8da1;
+    background-image: linear-gradient(white, pink, white);
     padding-bottom: 80px;
 }
 
@@ -27,6 +27,7 @@ body{
 #name {
     display: flex;
     align-items: flex-end;
+    color: #ff8da1;
 }
 #tag {
     font-size: 40px;
@@ -44,9 +45,7 @@ body{
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-5px); }
   }
-nav{
-    background-color:#ff8da1;
-}
+
 nav ul{
     width: 100%;
     list-style: none;
@@ -64,8 +63,9 @@ nav a{
     text-decoration: none;
     display: flex;
     align-items: center;
-    color:white;
-    font-size: 32px;    
+    color: #ff8da1;
+    font-size: 32px;
+    font-weight:500px;    
 }
 nav a:hover{
     background-repeat: no-repeat;
@@ -81,15 +81,16 @@ nav li:first-child{
     align-items: center;
     color: black;
 }
-h3 {
-    margin-left: 175px;
-    margin-top: 120px;
-}
 h1 {
     font-size: 72px;
     text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.5);
     color:white;
 }
+h3 {
+    margin-left: 175px;
+    margin-top: 120px;
+}
+
 .description {
     margin-top: 10px;
     margin-left: 175px;
@@ -125,10 +126,9 @@ body, nav, nav a {
 }
 
 
-
 body.dark-mode {
     background-image: none;
-    background-color: white;
+    background-image: linear-gradient(pink, white, pink);
     transition: all 0.25s linear;
     cursor: url(/dark_cursor.png), auto;
 }
@@ -140,9 +140,11 @@ body.dark-mode .description {
     margin-left: 175px;
     color:#949494
 }
-body.dark-mode nav a{
-    color: #ff8da1;
+body.dark-mode nav a, 
+body.dark-mode nav {
     transition: all 0.25s linear;
+    color: white;
+
 }
 body.dark-mode nav a:hover {
     /* background-color: #2e2e2e; */
@@ -150,16 +152,12 @@ body.dark-mode nav a:hover {
     font-weight:700;
     transition: all 0.25s linear;
 }
-body.dark-mode nav{
-    background-color: white;
+body.dark-mode #bottom-left #name {
     transition: all 0.25s linear;
-}
-body.dark-mode h1{
-    color: #ff8da1;
+    color: white;
     text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.5);
-    transition: all 0.25s linear;
 }
-body.dark-mode h3 {
-    color:#ff8da1;
+body.dark-mode #bottom-left #tag{
     transition: all 0.25s linear;
+    color: #ff8da1;
 }
