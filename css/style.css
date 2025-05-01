@@ -50,6 +50,7 @@ nav{
 }
 nav ul{
     width: 100%;
+    flex-wrap: wrap;
     list-style: none;
     display: flex;
     justify-content: flex-end;
@@ -57,7 +58,7 @@ nav ul{
     padding: 50px 30px;
 }
 nav li{
-    height: 80px;
+    height: 50px;
 }
 nav a{
     height: 100%;
@@ -72,6 +73,7 @@ nav a{
 nav a:hover{
     background-repeat: no-repeat;
     font-weight:700;
+    transition: all 0.25s linear;
 }
 nav li:first-child{
     padding: 0;
@@ -97,25 +99,31 @@ h1 {
     margin-left: 175px;
     color:#2e2e2e
 }
+
 .sidebar {
+    transition: all 0.25s linear;
     position: fixed;
     top: 0;
     right: 0;
-    height: 100vh;
+    height: 50vh;
     width: 250px;
     z-index: 999;
     background-color: #ff8da1;
-    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
     display: none;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: flex-end;
 }
 .sidebar li{
     width: 100%;
 }
 .sidebar a{
     width: 100%;
+}
+@media(max-width: 650px) {
+    .hideOnMobile{
+        display: none;
+    }
 }
 #about {
     padding-top: 800px;
@@ -163,5 +171,10 @@ body.dark-mode h1{
 }
 body.dark-mode h3 {
     color:#ff8da1;
+    transition: all 0.25s linear;
+}
+
+body.dark-mode .sidebar {
+    background-color: white;
     transition: all 0.25s linear;
 }
