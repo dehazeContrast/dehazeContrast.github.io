@@ -20,8 +20,6 @@ body{
         bottom: 100px;
         left: 20px;
         padding: 5px 10px 10px;
-        
-
 }
 #tag {
     position: fixed;
@@ -34,9 +32,7 @@ body{
 #rabbit-icon {
     animation: bounce 0.4s ease-in-out;
 }
-#rabbit-icon:hover {
-    cursor: 
-}
+
 @keyframes bounce {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-5px); }
@@ -68,17 +64,13 @@ nav a:hover{
     font-weight:700;
 }
 nav li:first-child{
+    padding: 0;
+    margin-left: 40px;
     margin-right: auto;
-    padding: 10px 40px;
     text-decoration: none;
     display: flex;
     align-items: center;
     color: black;
-}
-nav li:first-child img {
-    width: 35px;
-    height: auto;
-    margin-right: 10px;
 }
 h3 {
     margin-left: 175px;
@@ -118,6 +110,20 @@ h1 {
     padding-top: 800px;
     scroll-margin-bottom: 10px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 body, nav, nav a {
     transition: background-color 0.25s linear, color 0.25s linear;
