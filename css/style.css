@@ -13,6 +13,7 @@ body{
     min-height: 100vh;
     background-color:#ff8da1;
     padding-bottom: 80px;
+    transition: all 0.25s linear;
 }
 
 #bottom-left {
@@ -65,7 +66,8 @@ nav a{
     display: flex;
     align-items: center;
     color:white;
-    font-size: 32px;    
+    font-size: 32px; 
+
 }
 nav a:hover{
     background-repeat: no-repeat;
