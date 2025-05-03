@@ -55,7 +55,7 @@ nav ul{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 80px 30px;
+    padding: 50px 30px;
 }
 nav li{
     height: 50px;
@@ -100,6 +100,7 @@ h1 {
     color:#2e2e2e
 }
 
+/*add in transition for sidebar sliding in from left*/
 .sidebar {
     transition: all 0.25s linear;
     position: fixed;
@@ -120,9 +121,15 @@ h1 {
 .sidebar a{
     width: 100%;
 }
+.menu-button{
+    display: none;
+}
 @media(max-width: 650px) {
     .hideOnMobile{
         display: none;
+    }
+    .menu-button {
+        display: block;
     }
 }
 #about {

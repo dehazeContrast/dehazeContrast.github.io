@@ -11,6 +11,8 @@ document.addEventListener("DOMContentLoaded", () => {
 function showSideBar(){
     const sidebar = document.querySelector('.sidebar')
     sidebar.style.display = 'flex'
+    const hideOnMobile = document.querySelector('.hideOnMobile')
+    hideOnMobile.style.display = 'none'
 }
 function hideSideBar() {
     const sidebar = document.querySelector('.sidebar')
