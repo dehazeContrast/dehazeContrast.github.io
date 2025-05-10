@@ -206,3 +206,7 @@
         background-color: white;
         transition: all 0.25s linear;
     }
+    body.dark-mode .class{
+        background-color: white;
+        transition: all 0.25s linear;
+    }
