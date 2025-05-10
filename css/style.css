@@ -1,187 +1,208 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    cursor: url(/cursor.png), auto;
-}
-html {
-    scroll-behavior: smooth;
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        cursor: url(/cursor.png), auto;
+    }
+    html {
+        scroll-behavior: smooth;
 
-}
-body{
-    font-family: 'Roboto Flex', sans-serif;
-    min-height: 100vh;
-    background-color:#ff8da1;
-    padding-bottom: 80px;
-    transition: all 0.25s linear;
-}
+    }
+    body{
+        font-family: 'Roboto Flex', sans-serif;
+        min-height: 100vh;
+        background-color:#ff8da1;
+        padding-bottom: 80px;
+        transition: all 0.25s linear;
+    }
 
-#bottom-left {
-    flex-direction: column;
-    align-items: flex-start;
-    position: fixed;
-    bottom: 40px;
-    left: 20px;
-    padding: 5px 10px 10px;
-}
+    #bottom-left {
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed;
+        bottom: 40px;
+        left: 20px;
+        padding: 5px 10px 10px;
+    }
 
-#name {
-    display: flex;
-    align-items: flex-end;
-}
-#tag {
-    font-size: 40px;
-    color: #ffc3ce;
-}
-#rabbit-icon {
-    animation: bounce 0.4s ease-in-out;
-}
+    #name {
+        display: flex;
+        align-items: flex-end;
+    }
+    #tag {
+        font-size: 40px;
+        color: #ffc3ce;
+    }
+    #rabbit-icon {
+        animation: bounce 0.4s ease-in-out;
+        padding: 0;
+        margin-left: 0px;
+        margin-right: auto;
+        text-decoration: none;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        color: black;
+    }
 
-#rabbit-icon:focus, #rabbit-icon:active {
-    outline: none;
-}
+    #rabbit-icon:focus, #rabbit-icon:active {
+        outline: none;
+    }
 
-@keyframes bounce {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-5px); }
-  }
-nav{
-    background-color:#ff8da1;
-}
-nav ul{
-    width: 100%;
-    flex-wrap: wrap;
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 50px 30px;
-}
-nav li{
-    height: 50px;
-}
-nav a{
-    height: 100%;
-    padding: 0px 10px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    color:white;
-    font-size: 32px; 
+    @keyframes bounce {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-5px); }
+    }
+    nav{
+        background-color:#ff8da1;
+    }
+    nav ul{
+        width: 100%;
+        flex-wrap: wrap;
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 50px 30px;
+    }
+    nav li{
+        height: 50px;
+    }
+    nav a{
+        height: 100%;
+        padding: 0px 10px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color:white;
+        font-size: 32px; 
 
-}
-nav a:hover{
-    background-repeat: no-repeat;
-    font-weight:700;
-    transition: all 0.25s linear;
-}
-nav li:first-child{
-    padding: 0;
-    margin-left: 0px;
-    margin-right: auto;
-    text-decoration: none;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    color: black;
-}
-h3 {
-    margin-left: 175px;
-    margin-top: 120px;
-}
-h1 {
-    font-size: 72px;
-    text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.5);
-    color:white;
-}
-.description {
-    margin-top: 10px;
-    margin-left: 175px;
-    color:#2e2e2e
-}
+    }
+    nav a:hover{
+        background-repeat: no-repeat;
+        font-weight:700;
+        transition: all 0.25s linear;
+    }
+    h3 {
+        margin-left: 175px;
+        margin-top: 120px;
+    }
+    h1 {
+        font-size: 72px;
+        text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.5);
+        color:white;
+    }
+    .description {
+        margin-top: 10px;
+        margin-left: 175px;
+        color:#2e2e2e
+    }
 
-/*add in transition for sidebar sliding in from left*/
-.sidebar {
-    transition: all 0.25s linear;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 50vh;
-    width: 250px;
-    z-index: 999;
-    background-color: #ff8da1;
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-end;
-}
-.sidebar li{
-    width: 100%;
-}
-.sidebar a{
-    width: 100%;
-}
-.menu-button{
-    display: none;
-}
-@media(max-width: 650px) {
-    .hideOnMobile{
+    /*add in transition for sidebar sliding in from left*/
+    .sidebar {
+        transition: all 0.25s linear;
+        position: fixed;
+        top: 400px;
+        left: 0;
+        height: 30vh;
+        width: 250px;
+        z-index: 999;
+        background-color: #ff8da1;
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+    }
+    .sidebar li{
+        width: 100%;
+    }
+    .sidebar a{
+        width: 100%;
+    }
+
+    .class {
+        transition: all 0.25s linear;
+        position: fixed;
+        display: flex;
+        bottom: 0px;
+        right: 0px;
+        height: 30vh;
+        width: 250px;
+        z-index: 999;
+        background-color: #ff8da1;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+
+    .about_descrip {
+        display: flex;
+        margin-left: 100px;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .menu-button{
         display: none;
     }
-    .menu-button {
-        display: block;
+    @media(max-width: 650px) {
+        .hideOnMobile{
+            display: none;
+        }
+        .menu-button {
+            display: block;
+        }
     }
-}
-#about {
-    padding-top: 800px;
-    scroll-margin-bottom: 10px;
-}
+    #about {
+        padding-top: 800px;
+        scroll-margin-bottom: 10px;
+    }
 
-body, nav, nav a {
-    transition: background-color 0.25s linear, color 0.25s linear;
-}
-
+    body, nav, nav a {
+        transition: background-color 0.25s linear, color 0.25s linear;
+    }
 
 
-body.dark-mode {
-    background-image: none;
-    background-color: white;
-    transition: all 0.25s linear;
-    cursor: url(/dark_cursor.png), auto;
-}
-body.dark-mode ul:hover, nav, nav li:first-child, nav a:hover {
-    cursor: url(/dark_cursor.png), auto;
-}
-body.dark-mode .description {
-    margin-top: 10px;
-    margin-left: 175px;
-    color:#949494
-}
-body.dark-mode nav a{
-    color: #ff8da1;
-    transition: all 0.25s linear;
-}
-body.dark-mode nav a:hover {
-    /* background-color: #2e2e2e; */
-    background-repeat: no-repeat;
-    font-weight:700;
-    transition: all 0.25s linear;
-}
-body.dark-mode nav{
-    background-color: white;
-    transition: all 0.25s linear;
-}
-body.dark-mode h1{
-    color: #ff8da1;
-    text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.5);
-    transition: all 0.25s linear;
-}
-body.dark-mode h3 {
-    color:#ff8da1;
-    transition: all 0.25s linear;
-}
 
-body.dark-mode .sidebar {
-    background-color: white;
-    transition: all 0.25s linear;
-}
+    body.dark-mode {
+        background-image: none;
+        background-color: white;
+        transition: all 0.25s linear;
+        cursor: url(/dark_cursor.png), auto;
+    }
+    body.dark-mode ul:hover, nav, nav li:first-child, nav a:hover {
+        cursor: url(/dark_cursor.png), auto;
+    }
+    body.dark-mode .description {
+        margin-top: 10px;
+        margin-left: 175px;
+        color:#949494
+    }
+    body.dark-mode nav a{
+        color: #ff8da1;
+        transition: all 0.25s linear;
+    }
+    body.dark-mode nav a:hover {
+        /* background-color: #2e2e2e; */
+        background-repeat: no-repeat;
+        font-weight:700;
+        transition: all 0.25s linear;
+    }
+    body.dark-mode nav{
+        background-color: white;
+        transition: all 0.25s linear;
+    }
+    body.dark-mode h1{
+        color: #ff8da1;
+        text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.5);
+        transition: all 0.25s linear;
+    }
+    body.dark-mode h3 {
+        color:#ff8da1;
+        transition: all 0.25s linear;
+    }
+
+    body.dark-mode .sidebar {
+        background-color: white;
+        transition: all 0.25s linear;
+    }
